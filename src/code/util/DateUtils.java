@@ -112,7 +112,7 @@ public class DateUtils{
 	public static String getQsrq(int month){
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(new Date());
-        calendar.set(Calendar.DAY_OF_MONTH, 1);
+        calendar.set(Calendar.DAY_OF_MONTH, 1); //把当前的日期设置为这个月的第一天
         calendar.add(Calendar.MONTH, month);
         return dateFormat.format(calendar.getTime());
 	}
